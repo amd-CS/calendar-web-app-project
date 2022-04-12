@@ -1,0 +1,110 @@
+body {
+  font-family: monospace;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  background-image: url("../images/paper-calendar.jpg");
+  background-position: center;
+  font-size: 2rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.767);
+}
+
+#inputs {
+  border: lightgrey 2px solid;
+  box-shadow: 0 0 8px 2px rgba(219, 219, 219, 0.753);
+  border-radius: 1rem;
+  padding: 2rem 0;
+  background-color: rgb(241, 241, 241);
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-fields {
+  width: 15%;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.5rem;
+  border: lightgray 2px solid;
+  outline: 0;
+  box-shadow: 0 0 4px 2px rgba(219, 219, 219, 0.753);
+  transition: box-shadow 0.5s, background-color 0.5s;
+}
+
+.input-fields:focus {
+  box-shadow: 0 0 4px 2px #81f0ffc0;
+}
+
+#inputs input,
+#inputs select:first-of-type {
+  margin-right: 1rem;
+}
+
+#show {
+  display: flex;
+  margin: auto;
+  margin-bottom: 2rem;
+  justify-content: center;
+  padding: 0.7rem 0.1rem;
+  font-weight: 700;
+}
+
+#show:hover {
+  background-color: rgb(233, 233, 233);
+  box-shadow: 0 0 6px 3px rgba(214, 214, 214, 0.3);
+  cursor: pointer;
+}
+
+h2 {
+  display: none;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 1000px;
+}
+
+#container > div {
+  width: fit-content;
+  margin: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  border: lightgrey 2px solid;
+  box-shadow: 0 0 8px 2px rgba(219, 219, 219, 0.753);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  #inputs {
+    flex-direction: column;
+  }
+
+  #container {
+    flex-direction: column;
+    align-content: center;
+    gap: 1rem;
+  }
+
+  #container > div {
+    transform: scale(1.2);
+  }
+
+  #show {
+    margin-bottom: 2rem;
+  }
+
+  #inputs input,
+  #inputs select:first-of-type {
+    margin-right: 0;
+  }
+}

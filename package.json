@@ -1,0 +1,30 @@
+{
+  "name": "course_project-team-6",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5921151&assignment_repo_type=AssignmentRepo)",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CPSC-2350/course_project-team-6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CPSC-2350/course_project-team-6/issues"
+  },
+  "homepage": "https://github.com/CPSC-2350/course_project-team-6#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

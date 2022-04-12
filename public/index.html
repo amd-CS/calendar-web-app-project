@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 Interactive Calendar</title>
+    <link rel="icon" href="images/calendar.png" />
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" id="stylesheet" href="" />
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <h1>2021 Interactive Calendar</h1>
+
+    <div id="inputs">
+      <label for="year">Enter a Year:</label>
+      <input
+        value="2021"
+        class="input-fields"
+        type="number"
+        min="1"
+        id="year"
+      />
+
+      <label for="seasons">Choose a Season:</label>
+      <select class="input-fields" name="seasons" id="seasons">
+        <option value="Whole Year">Whole Year</option>
+        <option value="Winter">Winter</option>
+        <option value="Spring">Spring</option>
+        <option value="Summer">Summer</option>
+        <option value="Fall">Fall</option>
+      </select>
+
+      <label for="theme">Choose a Theme:</label>
+      <select class="input-fields" name="theme" id="theme">
+        <option>Light</option>
+        <option value="amethyst-purple">Amethyst Purple</option>
+        <option value="cobalt-blue">Cobalt Blue</option>
+        <option value="olive">Olive</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+
+    <br />
+    <button id="show" class="input-fields">Show Calendar</button>
+
+    <h2>Winter</h2>
+    <h2>Spring</h2>
+    <h2>Summer</h2>
+    <h2>Fall</h2>
+    <div id="container">
+      <div class="jan winter">
+        <h3>January</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="feb winter">
+        <h3>February</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="mar spring">
+        <h3>March</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="apr spring">
+        <h3>April</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="may spring">
+        <h3>May</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="jun summer">
+        <h3>June</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="jul summer">
+        <h3>July</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="aug summer">
+        <h3>August</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="sep fall">
+        <h3>September</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="oct fall">
+        <h3>October</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="nov fall">
+        <h3>November</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+      <div class="dec winter">
+        <h3>December</h3>
+        Su &nbsp;Mo &nbsp;Tu &nbsp;We &nbsp;Th &nbsp;Fr &nbsp;Sa<br />
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
